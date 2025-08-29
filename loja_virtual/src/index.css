@@ -25,6 +25,8 @@ header {
 
 header h1 {
     margin: 0; /* Remove a margem padrão do h1 */
+    font-family: 'Keronige', Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
 }
 
 /* --- Área Principal --- */
@@ -34,6 +36,13 @@ main {
     align-items: center;    /* Centraliza verticalmente */
     flex-grow: 1;           /* Faz o main ocupar todo o espaço restante */
     padding: 20px; /* Espaçamento para telas menores */
+}
+
+@font-face {
+    font-family: 'Keronige';
+    src: url(KeronigeRegular.ttf) format(truetype);
+    font-weight: normal;
+    font-style: normal;
 }
 
 /* --- Container do Login (antigo .centered-container) --- */
