@@ -34,7 +34,7 @@ main {
     display: flex;
     justify-content: center; /* Centraliza horizontalmente */
     align-items: center;    /* Centraliza verticalmente */
-    flex-grow: 1;           /* Faz o main ocupar todo o espaço restante */
+    min-height: 20px;           /* Faz o main ocupar todo o espaço restante */
     padding: 20px; /* Espaçamento para telas menores */
 }
 
@@ -45,15 +45,17 @@ main {
     font-style: normal;
 }
 
-/* --- Container do Login (antigo .centered-container) --- */
+/* Área de Login */
 .login-container {
     width: 100%;
     max-width: 400px; /* Largura máxima para não ficar muito grande em telas largas */
-    background-color: #fff;
+    background-color: #ffffff;
     padding: 40px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     box-sizing: border-box; /* Garante que padding não afete a largura final */
+    margin: 0 auto; /* garante que fique centralizado se usado dentro de col */
+    margin-top: 100px;
 }
 
 .login-container h2 {
@@ -63,7 +65,7 @@ main {
     color: #031518;
 }
 
-/* --- Estilos do Formulário --- */
+/* --- Estilos do Formulário (textos: email e senha) --- */
 .login-form .form-group {
     margin-bottom: 20px;
     text-align: left;
